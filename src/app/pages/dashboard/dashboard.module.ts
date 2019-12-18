@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import {
   NbButtonModule,
   NbCardModule,
-  NbCheckboxModule,
+  NbCheckboxModule, NbDatepickerModule, NbInputModule,
   NbProgressBarModule,
   NbRadioModule,
   NbStepperModule
@@ -20,6 +20,8 @@ import { DashboardComponent } from './dashboard.component';
     NbButtonModule,
     NbCheckboxModule,
     NbRadioModule,
+    NbInputModule,
+    NbDatepickerModule,
   ],
   declarations: [
     DashboardComponent,

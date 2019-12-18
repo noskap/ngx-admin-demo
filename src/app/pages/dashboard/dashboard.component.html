@@ -1,6 +1,42 @@
+<!--<div class="row">-->
+<nb-card>
+  <nb-card-body>
+    Hello from ngx-admin sandbox project.
+  </nb-card-body>
+</nb-card>
 <div class="row">
-  <nb-card>
-    <nb-card-body>Hello from ngx-admin sandbox project.</nb-card-body>
+
+  <nb-card class="col m-3">
+    <nb-card-header>String</nb-card-header>
+    <nb-card-body>
+      <input type="text" nbInput>
+    </nb-card-body>
+  </nb-card>
+  <nb-card class="col m-3">
+    <nb-card-header>Number</nb-card-header>
+    <nb-card-body>
+      <input type="number" nbInput>
+    </nb-card-body>
+  </nb-card>
+</div>
+<div class="row">
+  <nb-card class="col m-3">
+    <nb-card-header>
+      Start Date
+    </nb-card-header>
+    <nb-card-body>
+      <input nbInput placeholder="Pick Date" [nbDatepicker]="picker">
+      <nb-datepicker #picker ></nb-datepicker>
+    </nb-card-body>
+  </nb-card>
+  <nb-card class="col m-3">
+    <nb-card-header>
+      End Date
+    </nb-card-header>
+    <nb-card-body>
+      <input nbInput placeholder="Pick Date" [nbDatepicker]="picker2">
+      <nb-datepicker #picker2 ></nb-datepicker>
+    </nb-card-body>
   </nb-card>
 </div>
 <nb-card>
@@ -50,9 +86,9 @@
   </nb-card-body>
 </nb-card>
 <nb-card>
-  <nb-card-body >
+  <nb-card-body>
     <nb-progress-bar class="m-2" [value]="obs | async" [status]="status"></nb-progress-bar>
-    <button nbButton class="m-2" size="small"  status="info" (click)="start()">Restart</button>
+    <button nbButton class="m-2" size="small" status="info" (click)="start()">Restart</button>
     <button nbButton class="m-2" size="small" outline status="info" (click)="start()">Restart</button>
     <button nbButton class="m-2" size="small" status="danger" (click)="start()">Restart</button>
     <button nbButton class="m-2" size="small" outline status="danger" (click)="start()">Restart</button>
